@@ -4,95 +4,71 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="stylesheet.css">
 </head>
-<style>
-	#main{
-		width: 100%;
-		height: 100%;
-	}
-	.inner_div{
-		width: 1000px;
-
-		display: flex;
-		position: fixed;
-		top: 20%;
-		left: 30%;
-	}
-	.left{
-		width: 300px;
-		border-radius: 10px;
-		height: auto;
-		padding: 10px;
-		background-color:#36ae8b;
-	}
-	.right{
-		width:500px;
-		height: 500px;
-	}
-	.left h4 {
-		text-align: center;
-	} 
-	.left .txt {
-		text-align: center;
-	} 
-	.btn button {
-		text-align: center;
-		width: 130px;
-		height: 40px;
-		margin-top: 25px;
-		border-radius: 200px;
-		border: 1px solid white;
-		background-color:#36ae8b;
-		color: white;
-
-	}
-	.left_inner { 
-		text-align: center;
-		margin:133px 7px 20px 11px;
-	}
-	.left_inner h4 {
-		color: white;
-		font-size: 30px;
-		font-family: "Times New Roman", serif;
-	}
-	.left_inner p {
-		color: white;
-	} 
-</style>
-<body>
-	<div id="main">
-		<div class="inner_div">
-		    <div class="left">
-		    	<div class="left_inner">
-		    		<h4>Welcome Back!</h4>
-			    	<div class="txt">
-			    		 <p>
-			    		 	To Keep connected with us please <br> login with your personal info
-			    		 </p>
+	<body>
+		<div id="main">
+			<div class="inner_div">
+			    <div class="left">
+			    	<div class="logo">
+			    		 <img src="image/logo.png">
 			    	</div>
-			    	<div class="btn">
-			    		<button>Sign In</button>
+			    	<div class="left_inner">
+			    		<h4>Welcome Back!</h4>
+				    	<div class="txt">
+				    		 <p>
+				    		 	To Keep connected with us please <br> login with your personal info
+				    		 </p>
+				    	</div>
+				    	<div class="btn">
+				    		<button>Sign In</button>
+				    	</div>
 			    	</div>
-		    	</div>
-		    </div>
-		    <div class="right">
-		        <h5>Create Account</h5>
-		        <div class="social-icon">
-		        	<span></span>
-		        	<span></span>
-		        	<span></span>
-		        </div>
-		        <p> or use your email for registration</p>
-	        	<form class="form">		        		
-			        <input type="text" name="name" placeholder="Name">
-			        <input type="text" name="name" placeholder="Email">
-			        <input type="text" name="name" placeholder="Password">
-			        <div class="btn">
-			        	<button>Sign up</button>
-			        </div>
-	        	</form>
-		    </div>			
-		</div>		
-	</div>
-</body>
+			    </div>
+			    <div class="right">
+			    	<div class="right_inner">
+			    		<h2>
+			    			<b>Create Account</b>
+			    		</h2>
+				        <div class="social-icon">
+				        	<span>
+				        		<img src="image/facebook.png">
+				        	</span>
+				        	<span>
+				        		<img src="image/google.png">
+				        	</span>
+				        	<span>
+				        		<img src="image/linkedin.png">
+				        	</span>
+				        </div>
+				        <p> or use your email for registration</p>
+			        	<form class="loginform" method="post" autocomplete="off">
+			        	    <div class="input-form">
+			        	    	<div class="icons">
+			        	    		<i class="far fa-user"></i>
+			        	    	</div>
+			        	    	<input type="text" name="name" placeholder="Enter Name">
+			        	    </div>
+			        	    <div class="input-form">
+			        	    	<div class="icons">
+			        	    		<i class="far fa-envelope"></i>
+			        	    	</div>
+			        	    	<input  name="email" placeholder="Enter Email">
+			        	    </div>
+			        	    <div class="input-form">
+			        	    	<div class="icons">
+			        	    		<i class="fas fa-lock" style="color: #eaeeed; -webkit-text-stroke: 1px #888888;"></i>
+			        	    	</div>
+			        	    	<input  name="password" placeholder=" Enter Password">
+			        	    </div>
+					        <div class="btn">
+					        	<button type="submit">Sign up</button>
+					        </div>
+			        	</form>
+			    	</div>
+			    </div>			
+			</div>		
+		</div>
+	</body>
 </html>
