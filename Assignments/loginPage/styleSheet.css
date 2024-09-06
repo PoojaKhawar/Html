@@ -12,11 +12,12 @@
 	}
 	.left{
 		width: 300px;
-          border-top-left-radius: 10px;
-          border-bottom-left-radius: 10px;
 		height: auto;
 		padding: 10px;
+		position: relative;
 		background-color:#6cac93;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
 	}
 	.right{
 		width:500px;
@@ -114,4 +115,27 @@
 	}
 	.right_inner p {
 		color:#888888;
+	}
+	.logo {
+		width:300px;
+		height:150px;
+	    position: absolute;
+	    display: flex; 
+	}
+	.logo img {
+		width: 30px;
+		height: 30px;
+	}
+	.logo .qrcode {
+		width: 40px;
+		height: 40px;
+	}
+	.logo .txt {
+		width: 80px;
+		height: 40px;
+		text-align:top;
+		margin: -19px 0px 0px -12px;
+		font-size: 19px;
+        padding: auto;
+        color:white;
 	}

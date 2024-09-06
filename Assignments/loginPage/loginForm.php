@@ -12,7 +12,12 @@
 			<div class="inner_div">
 			    <div class="left">
 			    	<div class="logo">
-			    		 <img src="image/logo.png">
+			    		<div class="qrcode">
+			    			<img src="image/qr.png">
+			    		</div>
+			    		<div class="txt">
+			    			<h5>Deepika</h5>
+			    		</div>
 			    	</div>
 			    	<div class="left_inner">
 			    		<h4>Welcome Back!</h4>
